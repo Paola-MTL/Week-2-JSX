@@ -159,6 +159,19 @@ body {
     background-color: #333;
 }
 
+.download-button.tertiary {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #cfceca;
+}
+
+.download-button.tertiary:hover {
+    background-color: #dbdbd7;
+}
+
+.download-button.tertiary:active {
+    background-color: #dbdbd7;
+}
 /* ============================================
    Page label (version badge)
    ============================================ */

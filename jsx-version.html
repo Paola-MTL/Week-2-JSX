@@ -65,7 +65,7 @@
                     'Maximum context windows',
                 ],
                 buttonText: 'Start for free',
-                buttonVariant: 'primary',
+                buttonVariant: 'tertiary',
             };
             const proPlan = {
                 title: 'Pro',
@@ -78,6 +78,17 @@
                     'Maximum context windows',
                 ],
                 buttonText: 'Get Pro',
+                buttonVariant: 'secondary',
+            };
+            const enterprisePlan = {
+                title: 'Enterprise',
+                price: '$100/mo.',
+                includesText: 'Everything in Pro, plus:',
+                features: [
+                    'Unlimited Agent requests',
+                    'Unlimited Tab completions',
+                ],
+                buttonText: 'Contact sales',
                 buttonVariant: 'primary',
             };
 
@@ -90,6 +101,7 @@
                         {/* This is the same as writing: title="Hobby" price="Free" includesText="Includes:" etc. */}
                         <PricingCard {...hobbyPlan} />
                         <PricingCard {...proPlan} />
+                        <PricingCard {...enterprisePlan} />
                     </div>
                 </>
             );
